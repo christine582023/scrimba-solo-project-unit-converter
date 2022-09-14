@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap" rel="stylesheet">
+    <title>Scrimba Temperature Converter</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="container-head">
+            <h1>Metric / Imperial Unit Conversion</h1>
+                <label for="number">
+                    <input 
+                        type="text" 
+                        name="#" 
+                        id="type"
+                        placeholder="0"
+                        oninput="unitMeasure()"
+                    />
+                </label>
+        </div> <!--container head-->
+ 
+        <div class="container-body">
+            <div class="length-unit">
+                <h2>Length (Meter / Feet)</h2>
+                    <p id="length">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+            </div>
+
+            <div class="volume-unit">
+            <h2>Volume (Liters / Gallons)</h2>
+                <p id="volume">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+            </div>
+            <h2>Mass (Kilograms / Pounds)</h2>
+                <p id="mass">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+        </div><!--container body-->
+
+    </div> <!--container-->
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
